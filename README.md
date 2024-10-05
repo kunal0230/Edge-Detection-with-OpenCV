@@ -5,11 +5,11 @@
 ## Screenshots
 
 ### Home Page
-![Home Page](static/images/home_page)
-![Home Page](static/images/page-2)
+![Home Page](static/images/home_page.png)
+![Home Page](static/images/page-2.png)
 
 ### Edge Detection Results Page
-![Results Page](static/images/output)
+![Results Page](static/images/output.png)
 
 
 ## Table of Contents
