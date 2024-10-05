@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Detection App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Edge Detection</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/edge-detection">Try Edge Detection</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+<!-- Hero Section with Local Background Image -->
+<section class="hero-section text-center text-white" style="background-image: url('{{ url_for('static', filename='images/edge2-1.png') }}'); background-size: cover; background-position: center; padding: 150px 20px;">
+    <h1 class="display-4">Welcome to the Edge Detection App</h1>
+    <p class="lead">Transform your images using edge detection technology, a powerful tool in computer vision.</p>
+    <a href="/edge-detection" class="btn btn-lg btn-primary mt-3">Try Edge Detection</a>
+</section>
+
+
+
+    <!-- How It Works Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">How Edge Detection Works</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Edge detection is a technique in image processing that detects the boundaries of objects within an image. The most common algorithm is Canny edge detection, which works by:</p>
+                <ul>
+                    <li>Converting the image to grayscale.</li>
+                    <li>Applying a Gaussian blur to reduce noise.</li>
+                    <li>Detecting edges using the gradient of intensity changes.</li>
+                    <li>Tracing edges based on the detected gradients.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="static/images/edge2-1.png" class="img-fluid" alt="Edge Detection">
+            </div>
+        </div>
+        <p class="text-center mt-4">This technique is widely used in areas like computer vision, object detection, and image segmentation.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Edge Detection App by Kunal Chaugule</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
