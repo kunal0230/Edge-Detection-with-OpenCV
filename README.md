@@ -2,6 +2,15 @@
 # Edge Detection Web App
 
 ![Edge Detection](static/images/banner.jpg)
+## Screenshots
+
+### Home Page
+![Home Page](static/images/home_page)
+![Home Page](static/images/page-2)
+
+### Edge Detection Results Page
+![Results Page](static/images/output)
+
 
 ## Table of Contents
 - [Overview](#overview)
